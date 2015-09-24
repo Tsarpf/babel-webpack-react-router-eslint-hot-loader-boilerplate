@@ -1,0 +1,45 @@
+{
+	"parser": "babel-eslint",
+	"env": {
+		"browser": true,
+		"es6": true,
+		"mocha": true,
+		"node": true
+	},
+	"ecmaFeatures": {
+		"jsx": true,
+		"modules": true
+	},
+	"plugins": [
+		"eslint-plugin-react"
+	],
+ 	"rules": {
+		"brace-style": [ 2, "1tbs" ],
+		// REST API objects include underscores
+		"eol-last": 1,
+		"no-mixed-spaces-and-tabs": 1,
+		"no-multiple-empty-lines": [ 1, { max: 1 } ],
+		"no-multi-spaces": 1,
+		"no-unused-expressions": 0,
+		"no-unused-vars": 1,
+        "no-trailing-spaces": 2,
+		"quotes": [ 1, "single", "avoid-escape" ],
+		"semi-spacing": 1,
+		"space-after-keywords": [ 1, "always" ],
+		"space-before-blocks": [ 1, "always" ],
+		"space-before-function-paren": [ 1, "never" ],
+		// Our array literal index exception violates this rule
+		"object-curly-spacing": [ 1, "always" ],
+		"computed-property-spacing": [ 1, "always" ],
+		"space-in-parens": [ 1, "always" ],
+		"space-infix-ops": [ 1, { "int32Hint": false } ],
+		// Ideal for "!" but not for "++"
+		"space-unary-ops": 0,
+		// Assumed by default with Babel
+		"strict": [ 2, "never" ],
+		"valid-jsdoc": [ 1, { "requireReturn": false } ],
+		// Common top-of-file requires, expressions between external, interal
+		"vars-on-top": 1,
+		"react/jsx-curly-spacing": [ 1, "always" ]
+	}
+}
