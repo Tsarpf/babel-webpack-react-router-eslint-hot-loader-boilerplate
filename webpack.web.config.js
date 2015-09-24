@@ -21,7 +21,7 @@ module.exports = {
   debug: true,
   devtool: 'sourcemap',
   entry: [
-		'webpack-dev-server/client?http://0.0.0.0:3500',
+		'webpack-dev-server/client?http://localhost:3500',
 		'webpack/hot/only-dev-server',
 		'./src/WebApp.js'
   ],
@@ -62,7 +62,8 @@ module.exports = {
 	}, {
 		test: /\.(png|jpg|woff|woff2)$/,
 		loader: 'url-loader?limit=8192'
-	}]
+	}],
+	include: path.join( __dirname, 'src' )
   },
 
   plugins: [
