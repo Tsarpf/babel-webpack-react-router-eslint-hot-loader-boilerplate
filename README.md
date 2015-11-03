@@ -1,4 +1,4 @@
-# babel-webpack-react-eslint-boilerplate
+# babel-webpack-react-router-eslint-boilerplate
 
 * npm install
 * npm start
